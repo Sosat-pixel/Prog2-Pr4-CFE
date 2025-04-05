@@ -22,10 +22,11 @@ public class Ejercicio3 {
         }
         //Intercambio
         for (int i = 0; i < vec1.length; i++)
-        {
+        {if(i % 2 != 0){
             vecAux[i] = vec1[i];
             vec1[i] = vec2[i];
             vec2[i] = vecAux[i];
+            }
         }
         //Vec1
         System.out.println("");
